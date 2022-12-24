@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "kustomize",
+  "version": "0.0.1",
+  "generators": {
+    "kustomize": {
+      "factory": "./src/generators/kustomize/generator",
+      "schema": "./src/generators/kustomize/schema.json",
+      "description": "kustomize generator"
+    }
+  }
+}
