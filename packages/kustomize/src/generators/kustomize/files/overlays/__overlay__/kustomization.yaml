@@ -1,0 +1,10 @@
+# See: https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: <%= namespace %>
+
+# https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/resource/
+resources:
+  - ../../base # Inherit from base
+  # Add other resources here

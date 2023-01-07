@@ -1,28 +1,28 @@
 {
   "$schema": "http://json-schema.org/schema",
+  "$id": "KustomizeApp",
   "cli": "nx",
-  "$id": "Kustomize",
-  "title": "",
+  "title": "Create a Kubernetes Application using Kustomize",
+  "description": "Create a Kubernetes Application using Kustomize.",
   "type": "object",
+  "examples": [{ "command": "nx workspace-generator kustomize myapp", "description": "Generate apps/myapp" }],
   "properties": {
     "name": {
       "type": "string",
-      "description": "",
-      "$default": {
-        "$source": "argv",
-        "index": 0
-      },
-      "x-prompt": "What name would you like to use?"
+      "description": "Application name.",
+      "$default": { "$source": "argv", "index": 0 }
     },
-    "tags": {
+    "namespace": {
       "type": "string",
-      "description": "Add tags to the project (used for linting)",
-      "alias": "t"
+      "description": "Kubernetes namespace."
     },
-    "directory": {
-      "type": "string",
-      "description": "A directory where the project is placed"
+    "overlays": {
+      "description": "Kustomize overlays.",
+      "type": "array"
+    },
+    "dependencies": {
+      "description": "Project dependencies.",
+      "type": "array"
     }
-  },
-  "required": ["name"]
+  }
 }

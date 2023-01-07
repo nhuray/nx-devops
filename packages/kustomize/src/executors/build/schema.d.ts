@@ -1,1 +1,6 @@
-export interface BuildExecutorSchema {} // eslint-disable-line
+export interface BuildExecutorSchema {
+  outputPath: string
+  deleteOutputPath?: boolean
+  overlaysPath?: string
+  overlay?: string
+}

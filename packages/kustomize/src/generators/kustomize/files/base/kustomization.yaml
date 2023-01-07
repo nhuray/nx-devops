@@ -1,0 +1,18 @@
+# See: https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: <%= namespace %>
+
+# https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/resource/
+resources:
+  - namespace.yaml
+  # Add other resources here
+# https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/helmcharts/
+# Helm Chart used as a base manifest
+#helmCharts:
+#  - name:
+#    releaseName:
+#    namespace:
+#    version:
+#    repo:
