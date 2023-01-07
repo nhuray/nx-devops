@@ -1,13 +1,3 @@
-<div style="text-align: center;">
-
-[![CI](https://github.com/nhuray/nx-devops/actions/workflows/ci.yml/badge.svg)](https://github.com/nhuray/nx-devops/actions/workflows/ci.yml)
-[![License](https://img.shields.io/github/license/nhuray/nx-devops)](https://github.com/nhuray/nx-devops/blob/main/LICENSE)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
-</div>
-
-<hr>
-
 # Nx Devops
 
 A collection of Nx plugins for Devops tasks.
